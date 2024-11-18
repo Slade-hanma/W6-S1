@@ -1,3 +1,20 @@
+// base on the picture, the various cases 
+// - when one approach may be better than the other - can be regarded based on the following factors:
+
+// Readability:
+// Probably, when a widget creation logic is more complicated, the Dedicated Function approach makes reading a little bit easier.
+// When your case is not very complex, it is easier to read and understand, having put the Loop Directly into the List.
+
+// Maintainability:
+// - The Dedicated Function approach may render the code more modular and easy to maintain because the widget creation logic is encapsulated in its own function.
+// - The other approaches may be more intertwined with the main logic of the function, and it will be harder to maintain when the codebase increases.
+
+// Performance:
+// Different approaches may imply different performances - sometimes for use case, sometimes because one or the other has to handle many widgets in creation.
+//  The Dedicated Function approach may have a slightly higher overhead due to the function call, but for most use cases this is likely negligible.
+
+// That would imply that the choice between these approaches depends on requirements and complexity of the widget creation logic in a Flutter application. The Dedicated Function approach may become more beneficial in cases where the widget creation logic is more complex; otherwise, other approaches could be more suitable in simpler cases.
+
 import 'package:flutter/material.dart';
 
 void main() {
